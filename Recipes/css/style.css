@@ -1,1 +1,26 @@
-/*# sourceMappingURL=style.css.map */
+html {
+  font-size: 100% Arial, Verdana, sans-serif;
+  box-sizing: border-box;
+}
+
+::after,
+::before {
+  box-sizing: inherit;
+}
+
+header,
+footer,
+main,
+section,
+article,
+aside {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}/*# sourceMappingURL=style.css.map */
