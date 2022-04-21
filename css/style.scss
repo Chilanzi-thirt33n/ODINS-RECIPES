@@ -1,16 +1,24 @@
 //my food page css
 //VARIABLES
-$font-stack: Arial,
+$font-stack:'Josefin Sans',
+Helvetica,
+Arial,
 Verdana,
 sans-serif,
 ;
+$font-style:'Josefin Sans',
+Helvetica,
+'wire one',
+sansita,
+'sans-serif';
 $third-color: #cca7dc; //10
 $secondary-color: #a9b1da; //30
 $primary-color: #b0d4bd; //5
-$primary-background-color: #fff //60
+$primary-background-color: #fff; //60
 //DEFAULTS
-html {
-    font-size: 100% $font-stack;
+body {
+    font-family: $font-stack;
+    font-size: 100%;
     box-sizing: border-box;
 }
 
