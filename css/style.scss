@@ -4,9 +4,10 @@ $font-stack: Arial,
 Verdana,
 sans-serif,
 ;
-$primary-color: #cca7dc;
-$secondary-color: #a9b1da;
-$complement-color: #b0d4bd;
+$third-color: #cca7dc; //10
+$secondary-color: #a9b1da; //30
+$primary-color: #b0d4bd; //5
+$primary-background-color: #fff //60
 //DEFAULTS
 html {
     font-size: 100% $font-stack;
