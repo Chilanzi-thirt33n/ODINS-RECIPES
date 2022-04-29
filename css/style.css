@@ -10,79 +10,85 @@ body {
   font-family: "wire one", Helvetica, "sans-serif";
   font-size: 100%;
   box-sizing: border-box;
-}
-body header,
-body footer,
-body main,
-body section,
-body article,
-body aside {
   display: block;
 }
-body header p,
-body footer p,
-body main p,
-body section p,
-body article p,
-body aside p {
+body p {
   font-size: 2em;
 }
-body header h1,
-body header h2,
-body header h3,
-body header h4,
-body header h5,
-body header h6,
-body footer h1,
-body footer h2,
-body footer h3,
-body footer h4,
-body footer h5,
-body footer h6,
-body main h1,
-body main h2,
-body main h3,
-body main h4,
-body main h5,
-body main h6,
-body section h1,
-body section h2,
-body section h3,
-body section h4,
-body section h5,
-body section h6,
-body article h1,
-body article h2,
-body article h3,
-body article h4,
-body article h5,
-body article h6,
-body aside h1,
-body aside h2,
-body aside h3,
-body aside h4,
-body aside h5,
-body aside h6 {
+body h1,
+body h2,
+body h3,
+body h4,
+body h5,
+body h6 {
   font-family: "Gv time", Helvetica, Arial, Verdana, sans-serif;
 }
-body header a,
-body footer a,
-body main a,
-body section a,
-body article a,
-body aside a {
+body a {
   text-decoration: none;
 }
-body header img,
-body footer img,
-body main img,
-body section img,
-body article img,
-body aside img {
+body img {
   max-width: 100%;
 }
 
 ::after,
 ::before {
   box-sizing: inherit;
+}
+
+body {
+  display: grid;
+  grid-template-rows: minmax(-webkit-min-content, -webkit-max-content) 1fr minmax(-webkit-min-content, -webkit-max-content);
+  grid-template-rows: minmax(min-content, max-content) 1fr minmax(min-content, max-content);
+  grid-template-columns: minmax(-webkit-min-content, -webkit-max-content) 1fr minmax(-webkit-min-content, -webkit-max-content);
+  grid-template-columns: minmax(min-content, max-content) 1fr minmax(min-content, max-content);
+}
+
+header {
+  grid-row: 1/2;
+  grid-column: 1/4;
+  display: flex;
+  flex-direction: row;
+}
+
+main {
+  grid-row: 2/3;
+  grid-column: 1/4;
+  display: grid;
+  grid-template-rows: minmax(-webkit-min-content, -webkit-max-content) minmax(-webkit-min-content, -webkit-max-content) minmax(-webkit-min-content, -webkit-max-content);
+  grid-template-rows: minmax(min-content, max-content) minmax(min-content, max-content) minmax(min-content, max-content);
+  grid-template-columns: 60px minmax(-webkit-min-content, -webkit-max-content) minmax(-webkit-min-content, -webkit-max-content) minmax(-webkit-min-content, -webkit-max-content) 60px;
+  grid-template-columns: 60px minmax(min-content, max-content) minmax(min-content, max-content) minmax(min-content, max-content) 60px;
+}
+main #title {
+  grid-row: 1/2;
+  grid-column: 2/3;
+}
+main #topPicks {
+  grid-row: 2/4;
+  grid-column: 2/3;
+  background-color: #cca7dc;
+}
+main #nshima {
+  grid-row: 2/3;
+  grid-column: 3/5;
+  background-color: #a9b1da;
+}
+main #pancakes {
+  grid-row: 3/4;
+  grid-column: 3/4;
+  background-color: #a9b1da;
+  background-image: url(../images/pancakebackground.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+main #chicken {
+  grid-row: 3/4;
+  grid-column: 4/5;
+  background-color: #a9b1da;
+}
+
+footer {
+  grid-row: 3/4;
+  grid-column: 1/4;
 }/*# sourceMappingURL=style.css.map */
