@@ -1,15 +1,24 @@
 //my food page css
+//my custom font
+@font-face {
+    font-family: "Gv time";
+    src: url(../fonts/gv-time-font/GvtimeRegular-AL6Jg.otf) format('opentype');
+}
+
+@font-face {
+    font-family: "wire one";
+    src: url(../fonts/wire-one-font/WireOne-PJ1Z.ttf) format('truetype');
+}
+
 //VARIABLES
-$font-stack:'Josefin Sans',
+$font-stack:"Gv time",
 Helvetica,
 Arial,
 Verdana,
 sans-serif,
 ;
-$font-style:'Josefin Sans',
+$font-style:"wire one",
 Helvetica,
-'wire one',
-sansita,
 'sans-serif';
 $third-color: #cca7dc; //10
 $secondary-color: #a9b1da; //30
@@ -17,29 +26,37 @@ $primary-color: #b0d4bd; //5
 $primary-background-color: #fff; //60
 //DEFAULTS
 body {
-    font-family: $font-stack;
+    font-family: $font-style;
     font-size: 100%;
     box-sizing: border-box;
+    header,
+    footer,
+    main,
+    section,
+    article,
+    aside {
+        display: block;
+        p {
+            font-size: 2em;
+        }
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: $font-stack;
+        }
+        a {
+            text-decoration: none;
+        }
+        img {
+            max-width: 100%;
+        }
+    }
 }
 
 ::after,
 ::before {
     box-sizing: inherit;
-}
-
-header,
-footer,
-main,
-section,
-article,
-aside {
-    display: block;
-}
-
-a {
-    text-decoration: none;
-}
-
-img {
-    max-width: 100%;
 }

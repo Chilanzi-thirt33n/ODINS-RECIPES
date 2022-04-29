@@ -1,27 +1,88 @@
+@font-face {
+  font-family: "Gv time";
+  src: url(../fonts/gv-time-font/GvtimeRegular-AL6Jg.otf) format("opentype");
+}
+@font-face {
+  font-family: "wire one";
+  src: url(../fonts/wire-one-font/WireOne-PJ1Z.ttf) format("truetype");
+}
 body {
-  font-family: "Josefin Sans", Helvetica, Arial, Verdana, sans-serif;
+  font-family: "wire one", Helvetica, "sans-serif";
   font-size: 100%;
   box-sizing: border-box;
+}
+body header,
+body footer,
+body main,
+body section,
+body article,
+body aside {
+  display: block;
+}
+body header p,
+body footer p,
+body main p,
+body section p,
+body article p,
+body aside p {
+  font-size: 2em;
+}
+body header h1,
+body header h2,
+body header h3,
+body header h4,
+body header h5,
+body header h6,
+body footer h1,
+body footer h2,
+body footer h3,
+body footer h4,
+body footer h5,
+body footer h6,
+body main h1,
+body main h2,
+body main h3,
+body main h4,
+body main h5,
+body main h6,
+body section h1,
+body section h2,
+body section h3,
+body section h4,
+body section h5,
+body section h6,
+body article h1,
+body article h2,
+body article h3,
+body article h4,
+body article h5,
+body article h6,
+body aside h1,
+body aside h2,
+body aside h3,
+body aside h4,
+body aside h5,
+body aside h6 {
+  font-family: "Gv time", Helvetica, Arial, Verdana, sans-serif;
+}
+body header a,
+body footer a,
+body main a,
+body section a,
+body article a,
+body aside a {
+  text-decoration: none;
+}
+body header img,
+body footer img,
+body main img,
+body section img,
+body article img,
+body aside img {
+  max-width: 100%;
 }
 
 ::after,
 ::before {
   box-sizing: inherit;
-}
-
-header,
-footer,
-main,
-section,
-article,
-aside {
-  display: block;
-}
-
-a {
-  text-decoration: none;
-}
-
-img {
-  max-width: 100%;
 }/*# sourceMappingURL=style.css.map */
