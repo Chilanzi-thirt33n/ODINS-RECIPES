@@ -6,11 +6,16 @@
   font-family: "wire one";
   src: url(../fonts/wire-one-font/WireOne-PJ1Z.ttf) format("truetype");
 }
+@font-face {
+  font-family: "warriot";
+  src: url(../fonts/warriot-font/Warriot-9Y5wL.ttf) format("truetype");
+}
 body {
   font-family: "wire one", Helvetica, "sans-serif";
   font-size: 100%;
   box-sizing: border-box;
   display: block;
+  background-color: #e0fbfc;
 }
 body p {
   font-size: 2em;
@@ -21,7 +26,7 @@ body h3,
 body h4,
 body h5,
 body h6 {
-  font-family: "Gv time", Helvetica, Arial, Verdana, sans-serif;
+  font-family: "warriot", "Gv time", Helvetica, Arial, Verdana, sans-serif;
 }
 body a {
   text-decoration: none;
@@ -41,6 +46,8 @@ body {
   grid-template-rows: minmax(min-content, max-content) 1fr minmax(min-content, max-content);
   grid-template-columns: minmax(-webkit-min-content, -webkit-max-content) 1fr minmax(-webkit-min-content, -webkit-max-content);
   grid-template-columns: minmax(min-content, max-content) 1fr minmax(min-content, max-content);
+  justify-content: space-evenly;
+  margin: 0;
 }
 
 header {
@@ -48,6 +55,34 @@ header {
   grid-column: 1/4;
   display: flex;
   flex-direction: row;
+  flex-wrap: nowrap;
+  border-bottom: black 1px solid;
+  padding: 0.5em 3em;
+  height: 3em;
+  justify-content: space-between;
+  background-color: #3d5a80;
+}
+header #logo {
+  margin-top: 0;
+  margin-bottom: 0;
+  width: 100px;
+  height: 100px;
+  flex: initial;
+}
+header p {
+  margin-top: 0;
+  margin-bottom: 0;
+  flex: initial;
+}
+header a:link {
+  color: black;
+}
+header a:visited {
+  color: black;
+}
+header a:hover {
+  color: #98c1d9;
+  text-decoration: underline;
 }
 
 main {
@@ -56,8 +91,8 @@ main {
   display: grid;
   grid-template-rows: minmax(-webkit-min-content, -webkit-max-content) minmax(-webkit-min-content, -webkit-max-content) minmax(-webkit-min-content, -webkit-max-content);
   grid-template-rows: minmax(min-content, max-content) minmax(min-content, max-content) minmax(min-content, max-content);
-  grid-template-columns: 60px minmax(-webkit-min-content, -webkit-max-content) minmax(-webkit-min-content, -webkit-max-content) minmax(-webkit-min-content, -webkit-max-content) 60px;
-  grid-template-columns: 60px minmax(min-content, max-content) minmax(min-content, max-content) minmax(min-content, max-content) 60px;
+  grid-template-columns: 150px minmax(-webkit-min-content, -webkit-max-content) minmax(-webkit-min-content, -webkit-max-content) minmax(-webkit-min-content, -webkit-max-content) 150px;
+  grid-template-columns: 150px minmax(min-content, max-content) minmax(min-content, max-content) minmax(min-content, max-content) 150px;
 }
 main #title {
   grid-row: 1/2;
@@ -66,29 +101,57 @@ main #title {
 main #topPicks {
   grid-row: 2/4;
   grid-column: 2/3;
-  background-color: #cca7dc;
+  background-color: #3d5a80;
+  border-top-left-radius: 40px;
 }
 main #nshima {
   grid-row: 2/3;
   grid-column: 3/5;
-  background-color: #a9b1da;
+  background-color: #3d5a80;
 }
 main #pancakes {
   grid-row: 3/4;
   grid-column: 3/4;
-  background-color: #a9b1da;
-  background-image: url(../images/pancakebackground.png);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: #3d5a80;
 }
 main #chicken {
   grid-row: 3/4;
   grid-column: 4/5;
-  background-color: #a9b1da;
+  background-color: #3d5a80;
+  border-bottom-right-radius: 40px;
+}
+main .button {
+  height: auto;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0 2em;
+  text-align: center;
+}
+main .button a:link {
+  padding: 0 2em;
+  background-color: #98c1d9;
+  border: solid black 1px;
+  color: black;
+}
+main .button a:visited {
+  color: black;
+}
+main .button a:hover {
+  background-color: #e0fbfc;
+  box-shadow: 5px 5px black;
+  text-align: center;
+  height: auto;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 footer {
   grid-row: 3/4;
   grid-column: 1/4;
+}
+footer #copyright {
+  text-align: center;
+  font-size: 1.2em;
 }/*# sourceMappingURL=style.css.map */

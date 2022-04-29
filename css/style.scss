@@ -10,8 +10,14 @@
     src: url(../fonts/wire-one-font/WireOne-PJ1Z.ttf) format('truetype');
 }
 
+@font-face {
+    font-family: "warriot";
+    src: url(../fonts/warriot-font/Warriot-9Y5wL.ttf) format('truetype');
+}
+
 //VARIABLES
-$font-stack:"Gv time",
+$font-stack:"warriot",
+"Gv time",
 Helvetica,
 Arial,
 Verdana,
@@ -20,16 +26,17 @@ sans-serif,
 $font-style:"wire one",
 Helvetica,
 'sans-serif';
-$third-color: #cca7dc; //10
-$secondary-color: #a9b1da; //30
-$primary-color: #b0d4bd; //5
-$primary-background-color: #fff; //60
+$secondary-color: #3d5a80; //30
+$primary-color: #98c1d9; //10
+$primary-background-color: #e0fbfc; //60
+$hover-color:#8d99ae;
 //DEFAULTS
 body {
     font-family: $font-style;
     font-size: 100%;
     box-sizing: border-box;
     display: block;
+    background-color: $primary-background-color;
     p {
         font-size: 2em;
     }
@@ -59,6 +66,8 @@ body {
     display: grid;
     grid-template-rows: minmax(min-content, max-content) 1fr minmax(min-content, max-content);
     grid-template-columns: minmax(min-content, max-content) 1fr minmax(min-content, max-content);
+    justify-content: space-evenly;
+    margin: 0;
 }
 
 header {
@@ -66,6 +75,35 @@ header {
     grid-column: 1/4;
     display: flex;
     flex-direction: row;
+    flex-wrap: nowrap;
+    border-bottom: black 1px solid;
+    padding: .5em 3em;
+    height: 3em;
+    justify-content: space-between;
+    background-color: $secondary-color;
+    //content in the header section
+    #logo {
+        margin-top: 0;
+        margin-bottom: 0;
+        width: 100px;
+        height: 100px;
+        flex: initial;
+    }
+    p {
+        margin-top: 0;
+        margin-bottom: 0;
+        flex: initial;
+    }
+    a:link {
+        color: black;
+    }
+    a:visited {
+        color: black;
+    }
+    a:hover {
+        color: $primary-color;
+        text-decoration: underline;
+    }
 }
 
 main {
@@ -73,7 +111,7 @@ main {
     grid-column: 1/4;
     display: grid;
     grid-template-rows: minmax(min-content, max-content) minmax(min-content, max-content) minmax(min-content, max-content);
-    grid-template-columns: 60px minmax(min-content, max-content) minmax(min-content, max-content) minmax(min-content, max-content) 60px;
+    grid-template-columns: 150px minmax(min-content, max-content) minmax(min-content, max-content) minmax(min-content, max-content) 150px;
     //nested divs for products
     #title {
         grid-row: 1/2;
@@ -83,7 +121,8 @@ main {
     #topPicks {
         grid-row: 2/4;
         grid-column: 2/3;
-        background-color: $third-color;
+        background-color: $secondary-color;
+        border-top-left-radius: 40px;
     }
     //nshima style
     #nshima {
@@ -96,20 +135,45 @@ main {
         grid-row: 3/4;
         grid-column: 3/4;
         background-color: $secondary-color;
-        background-image: url(../images/pancakebackground.png);
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-size: cover;
     }
     //chicken style
     #chicken {
         grid-row: 3/4;
         grid-column: 4/5;
         background-color: $secondary-color;
+        border-bottom-right-radius: 40px;
+    }
+    //buttons looks
+    .button {
+        height: auto;
+        width: fit-content;
+        padding: 0 2em;
+        text-align: center;
+        a:link {
+            padding: 0 2em;
+            background-color: $primary-color;
+            border: solid black 1px;
+            color: black;
+        }
+        a:visited {
+            color: black;
+        }
+        a:hover {
+            background-color: $primary-background-color;
+            box-shadow: 5px 5px black;
+            text-align: center;
+            height: auto;
+            width: fit-content;
+        }
     }
 }
 
 footer {
     grid-row: 3/4;
     grid-column: 1/4;
+    //copyright
+    #copyright {
+        text-align: center;
+        font-size: 1.2em;
+    }
 }
