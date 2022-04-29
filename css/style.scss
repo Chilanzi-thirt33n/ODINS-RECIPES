@@ -34,6 +34,7 @@ $hover-color:#8d99ae;
 body {
     font-family: $font-style;
     font-size: 100%;
+    text-transform: capitalize;
     box-sizing: border-box;
     display: block;
     background-color: $primary-background-color;
@@ -117,6 +118,13 @@ main {
     #title {
         grid-row: 1/2;
         grid-column: 2/3;
+        //the headings
+        h1 {
+            margin: 20px 0 0 0;
+        }
+        p {
+            margin: 0;
+        }
     }
     //toppicks style
     #topPicks {

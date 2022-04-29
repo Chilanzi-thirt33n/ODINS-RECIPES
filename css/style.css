@@ -13,6 +13,7 @@
 body {
   font-family: "wire one", Helvetica, "sans-serif";
   font-size: 100%;
+  text-transform: capitalize;
   box-sizing: border-box;
   display: block;
   background-color: #e0fbfc;
@@ -98,6 +99,12 @@ main {
 main #title {
   grid-row: 1/2;
   grid-column: 2/3;
+}
+main #title h1 {
+  margin: 20px 0 0 0;
+}
+main #title p {
+  margin: 0;
 }
 main #topPicks {
   grid-row: 2/4;
