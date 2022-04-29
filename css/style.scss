@@ -112,6 +112,7 @@ main {
     display: grid;
     grid-template-rows: minmax(min-content, max-content) minmax(min-content, max-content) minmax(min-content, max-content);
     grid-template-columns: 150px minmax(min-content, max-content) minmax(min-content, max-content) minmax(min-content, max-content) 150px;
+    grid-gap: 12px;
     //nested divs for products
     #title {
         grid-row: 1/2;
@@ -122,13 +123,15 @@ main {
         grid-row: 2/4;
         grid-column: 2/3;
         background-color: $secondary-color;
-        border-top-left-radius: 40px;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
     }
     //nshima style
     #nshima {
         grid-row: 2/3;
         grid-column: 3/5;
         background-color: $secondary-color;
+        border-top-right-radius: 20px;
     }
     //pancakes styles 
     #pancakes {
@@ -141,7 +144,7 @@ main {
         grid-row: 3/4;
         grid-column: 4/5;
         background-color: $secondary-color;
-        border-bottom-right-radius: 40px;
+        border-bottom-right-radius: 20px;
     }
     //buttons looks
     .button {
