@@ -16,7 +16,7 @@ body {
   text-transform: capitalize;
   box-sizing: border-box;
   display: block;
-  background-color: #e0fbfc;
+  background-color: #fffcf9;
 }
 body p {
   font-size: 2em;
@@ -57,11 +57,11 @@ header {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  border-bottom: black 1px solid;
+  border-bottom: #ff6978 1px solid;
   padding: 0.5em 3em;
   height: 3em;
   justify-content: space-between;
-  background-color: #3d5a80;
+  background-color: #b1ede8;
 }
 header #logo {
   margin-top: 0;
@@ -82,7 +82,7 @@ header a:visited {
   color: black;
 }
 header a:hover {
-  color: #98c1d9;
+  color: #ff6978;
   text-decoration: underline;
 }
 
@@ -109,25 +109,40 @@ main #title p {
 main #topPicks {
   grid-row: 2/4;
   grid-column: 2/3;
-  background-color: #3d5a80;
+  background-color: #b1ede8;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
+  position: relative;
+}
+main #topPicks #randomPick {
+  position: absolute;
+  top: 40%;
+  bottom: 50%;
 }
 main #nshima {
   grid-row: 2/3;
   grid-column: 3/5;
-  background-color: #3d5a80;
+  background-color: #b1ede8;
   border-top-right-radius: 20px;
+  position: relative;
+}
+main #nshima #shibutton {
+  position: absolute;
+  top: 40%;
+  left: 30%;
+}
+main #nshima figure {
+  margin: 2em 0 0 0;
 }
 main #pancakes {
   grid-row: 3/4;
   grid-column: 3/4;
-  background-color: #3d5a80;
+  background-color: #b1ede8;
 }
 main #chicken {
   grid-row: 3/4;
   grid-column: 4/5;
-  background-color: #3d5a80;
+  background-color: #b1ede8;
   border-bottom-right-radius: 20px;
 }
 main .button {
@@ -140,7 +155,7 @@ main .button {
 }
 main .button a:link {
   padding: 0 2em;
-  background-color: #98c1d9;
+  background-color: #ff6978;
   border: solid black 1px;
   color: black;
 }
@@ -148,8 +163,8 @@ main .button a:visited {
   color: black;
 }
 main .button a:hover {
-  background-color: #e0fbfc;
-  box-shadow: 5px 5px black;
+  background-color: #fffcf9;
+  box-shadow: 5px 6px black;
   text-align: center;
   height: auto;
   width: -webkit-fit-content;

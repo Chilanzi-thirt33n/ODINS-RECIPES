@@ -26,9 +26,9 @@ sans-serif,
 $font-style:"wire one",
 Helvetica,
 'sans-serif';
-$secondary-color: #3d5a80; //30
-$primary-color: #98c1d9; //10
-$primary-background-color: #e0fbfc; //60
+$secondary-color: #b1ede8; //30
+$primary-color: #ff6978; //10
+$primary-background-color: #fffcf9; //60
 $hover-color:#8d99ae;
 //DEFAULTS
 body {
@@ -77,7 +77,7 @@ header {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    border-bottom: black 1px solid;
+    border-bottom: $primary-color 1px solid;
     padding: .5em 3em;
     height: 3em;
     justify-content: space-between;
@@ -133,6 +133,13 @@ main {
         background-color: $secondary-color;
         border-top-left-radius: 20px;
         border-bottom-left-radius: 20px;
+        position: relative;
+        //positioning of random
+        #randomPick {
+            position: absolute;
+            top: 40%;
+            bottom: 50%;
+        }
     }
     //nshima style
     #nshima {
@@ -140,6 +147,16 @@ main {
         grid-column: 3/5;
         background-color: $secondary-color;
         border-top-right-radius: 20px;
+        position: relative;
+        //positioning shibutton
+        #shibutton {
+            position: absolute;
+            top: 40%;
+            left: 30%;
+        }
+        figure {
+            margin: 2em 0 0 0;
+        }
     }
     //pancakes styles 
     #pancakes {
@@ -171,7 +188,7 @@ main {
         }
         a:hover {
             background-color: $primary-background-color;
-            box-shadow: 5px 5px black;
+            box-shadow: 5px 6px black;
             text-align: center;
             height: auto;
             width: fit-content;
