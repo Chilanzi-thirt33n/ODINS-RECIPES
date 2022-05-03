@@ -190,11 +190,16 @@ main .button a:visited {
 main .button a:hover {
   background-color: #edf2f4;
   box-shadow: 5px 6px black;
+  border-radius: 10px;
   text-align: center;
   height: auto;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
 }
 main .button a:active {
   background-color: rgb(253, 43, 43);

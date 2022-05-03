@@ -219,9 +219,14 @@ main {
         a:hover {
             background-color: $primary-background-color;
             box-shadow: 5px 6px black;
+            border-radius: 10px;
             text-align: center;
             height: auto;
             width: fit-content;
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            -ms-border-radius: 10px;
+            -o-border-radius: 10px;
         }
         a:active {
             background-color: $active-color;
