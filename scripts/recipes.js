@@ -33,7 +33,8 @@ var welcomeMsg = function() {
 };
 //* MyMethod footer
 var myFooter = function() {
-    let message = '<p id="copyright">copyright &copy; arbit-tech  ' + year + ' Chilaaanzi</P>';
+    let message = '<p id="copyright">copyright &copy; arbit-tech  ' + year + ' Chilaaanzi ';
+    message += 'last modified : ' + document.lastModified + '</p>';
     return message;
 };
 //* this is document section
