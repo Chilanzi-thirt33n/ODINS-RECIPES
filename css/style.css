@@ -10,13 +10,26 @@
   font-family: "un-round";
   src: url(../fonts/unround-font/Unround-owpGB.ttf) format("truetype");
 }
+@font-face {
+  font-family: "billion-dream";
+  src: url(../fonts/billion-dreams-font/BillionDreams-vmgK9.ttf) format("truetype");
+}
+@font-face {
+  font-family: "maghrib";
+  src: url(../fonts/maghrib-font/Maghrib-MVZpx.ttf) format("truetype");
+}
 body {
-  font-family: "wire one", Helvetica, "sans-serif";
+  font-family: "maghrib", "wire one", Helvetica, "sans-serif";
   font-size: 100%;
   text-transform: capitalize;
   box-sizing: border-box;
   display: block;
   background-color: #edf2f4;
+  background-image: url("../images/foodbackground2.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
 }
 body p {
   font-size: 2em;

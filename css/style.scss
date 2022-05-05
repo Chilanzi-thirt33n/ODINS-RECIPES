@@ -15,6 +15,16 @@
     src: url(../fonts/unround-font/Unround-owpGB.ttf) format('truetype');
 }
 
+@font-face {
+    font-family: "billion-dream";
+    src: url(../fonts/billion-dreams-font/BillionDreams-vmgK9.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: "maghrib";
+    src: url(../fonts/maghrib-font/Maghrib-MVZpx.ttf) format('truetype');
+}
+
 //VARIABLES
 $font-stack:"un-round",
 "Gv time",
@@ -22,7 +32,8 @@ Helvetica,
 Arial,
 Verdana,
 sans-serif;
-$font-style:"wire one",
+$font-style:"maghrib",
+"wire one",
 Helvetica,
 'sans-serif';
 $secondary-color: #c8d3d5; //30
@@ -39,6 +50,12 @@ body {
     box-sizing: border-box;
     display: block;
     background-color: $primary-background-color;
+    background-image: url("../images/foodbackground2.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    //*body elements
     p {
         font-size: 2em;
     }
@@ -235,7 +252,7 @@ main {
 }
 
 footer {
-    //copyright
+    //* copyright
     #copyright {
         text-align: center;
         font-size: 1.2em;
