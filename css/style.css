@@ -60,35 +60,46 @@ body {
 }
 
 header {
+  height: auto;
+  width: 100vw;
+}
+header ul {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   padding: 0.5em 3em;
-  height: 3em;
-  background-color: #c8d3d5;
   justify-content: space-between;
+  list-style-type: none;
+  margin-top: 0;
+  font-size: 1.7em;
+  background-color: #c8d3d5;
 }
-header #logo {
+header ul #logo {
   margin-top: 0;
   margin-bottom: 0;
-  width: 100px;
-  height: 100px;
+  margin-right: auto;
   flex: initial;
 }
-header p {
+header ul p {
   margin-top: 0;
   margin-bottom: 0;
   flex: initial;
 }
-header a:link {
+header ul a:link {
   color: black;
 }
-header a:visited {
+header ul a:visited {
   color: black;
 }
-header a:hover {
+header ul a:hover {
   color: #f4d35e;
   text-decoration: underline;
+}
+header ul .nav-button {
+  padding-right: 1.2em;
+}
+header ul #welcome-message {
+  padding-right: 20em;
 }
 
 main {
@@ -126,7 +137,7 @@ main #topPicks #randomPick {
   position: absolute;
   top: 40%;
   bottom: 50%;
-  left: 30%;
+  left: 25%;
 }
 main #nshima {
   grid-row: 2/3;
