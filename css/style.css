@@ -77,12 +77,10 @@ header ul {
 header ul #logo {
   margin-top: 0;
   margin-bottom: 0;
-  margin-right: auto;
   flex: initial;
 }
-header ul p {
-  margin-top: 0;
-  margin-bottom: 0;
+header ul li {
+  margin: 0.2em;
   flex: initial;
 }
 header ul a:link {
@@ -94,12 +92,6 @@ header ul a:visited {
 header ul a:hover {
   color: #f4d35e;
   text-decoration: underline;
-}
-header ul .nav-button {
-  padding-right: 1.2em;
-}
-header ul #welcome-message {
-  padding-right: 20em;
 }
 
 main {
