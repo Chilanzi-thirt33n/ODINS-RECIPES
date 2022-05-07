@@ -16,8 +16,15 @@
 this is a odin project on food recipes
 
 ### Screenshot
+figma design 1
+![](images/design/prototype.png)
+figma design 2
+![](images/design/prototype002.png)
+progress 1
+![](images/design/2022-05-02_02-51.png)
+progress 2022
+![](images/design/2022-05-05_13-09.png)
 
-![](images/designs/)
 
 ### Links
 
