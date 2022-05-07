@@ -21,8 +21,8 @@ this is a odin project on food recipes
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/Chilanzi-thirt33n/ODINS-RECIPES)
-- Live Site URL: [Add live site URL here](https://chilanzi-thirt33n.github.io/ODINS-RECIPES/)
+- Solution URL: [Repository](https://github.com/Chilanzi-thirt33n/ODINS-RECIPES)
+- Live Site URL: [Github Pages](https://chilanzi-thirt33n.github.io/ODINS-RECIPES/)
 
 ## My process
 - html semantics
