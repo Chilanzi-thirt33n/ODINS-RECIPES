@@ -69,6 +69,8 @@ header ul {
   flex-wrap: nowrap;
   padding: 0.5em 3em;
   justify-content: space-between;
+  align-items: center;
+  gap: 0.5px;
   list-style-type: none;
   margin-top: 0;
   font-size: 1.7em;
@@ -120,6 +122,11 @@ main #topPicks {
   grid-row: 2/4;
   grid-column: 2/3;
   background-color: #c8d3d5;
+  background-image: url("../images/backcss.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-clip: content-box;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
   height: auto;

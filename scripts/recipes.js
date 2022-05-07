@@ -1,16 +1,21 @@
 //**var for date that will be used by functions
+
 var myDate = new Date();
-let year = myDate.getFullYear();
-let today = myDate.getHours();
+var year = myDate.getFullYear();
+var today = myDate.getHours();
+const afternoonHour = 12;
+const morningHour = 6;
+const nightHour = 18;
+
 
 //* MyMethod this is the function for changing html href 
 var RandomLink = function() {
     var myLink;
-    if (today >= 6) {
+    if (today >= morningHour) {
         myLink = 'Recipes/Pancakes.html';
-    } else if (today >= 12) {
+    } else if (today >= afternoonHour) {
         myLink = 'Recipes/Nshima.html';
-    } else if (today >= 18) {
+    } else if (today >= nightHour) {
         myLink = 'Recipes/Chicken.html'
     } else {
         myLink = 'Recipes/Chicken.html';
@@ -20,11 +25,11 @@ var RandomLink = function() {
 //* MyMethod for welcome
 var welcomeMsg = function() {
     var message;
-    if (today >= 6) {
+    if (today >= morningHour) {
         message = 'welcome and good morning its tea time';
-    } else if (today >= 12) {
+    } else if (today >= afternoonHour) {
         message = "hello its lunch time grab something heavy";
-    } else if (today >= 18) {
+    } else if (today >= nightHour) {
         message = 'evening we recommend something light at night';
     } else {
         message = 'welcome to food central';

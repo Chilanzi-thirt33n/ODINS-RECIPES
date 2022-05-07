@@ -1,5 +1,5 @@
-//my food page css
-//my custom font
+//********************MY FOOD PAGE SCSS**********************
+//**********************CUSTOM FONTS*************************
 @font-face {
     font-family: "Gv time";
     src: url(../fonts/gv-time-font/GvtimeRegular-AL6Jg.otf) format('opentype');
@@ -25,7 +25,7 @@
     src: url(../fonts/maghrib-font/Maghrib-MVZpx.ttf) format('truetype');
 }
 
-//VARIABLES
+//***************************VARIABLES***************************
 $font-stack:"un-round",
 "Gv time",
 Helvetica,
@@ -42,7 +42,7 @@ $primary-background-color: #edf2f4; //60
 $hover-color:#8d99ae;
 $heading-color: #ffb623;
 $active-color: rgb(253, 43, 43);
-//DEFAULTS
+//*****************************DEFAULTS**************************
 body {
     font-family: $font-style;
     font-size: 100%;
@@ -81,7 +81,13 @@ body {
     box-sizing: inherit;
 }
 
-//Desktop layout design
+//todo               MOBILE *****************************
+@media screen and (min-width: 320px) {}
+
+//todo              TABLET *****************************
+@media screen and (min-width: 834px) {}
+
+//******************DESKTOP STYLE********************************
 body {
     margin: 0;
 }
@@ -96,6 +102,8 @@ header {
         flex-wrap: nowrap;
         padding: .5em 3em;
         justify-content: space-between;
+        align-items: center;
+        gap: .5px;
         //** in list content styles 
         list-style-type: none;
         margin-top: 0;
@@ -144,11 +152,16 @@ main {
             margin: 0;
         }
     }
-    //** toppicks style
+    //**************** toppicks style ******************
     #topPicks {
         grid-row: 2/4;
         grid-column: 2/3;
         background-color: $secondary-color;
+        background-image: url("../images/backcss.png");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        background-clip: content-box;
         border-top-left-radius: 20px;
         border-bottom-left-radius: 20px;
         height: auto;
@@ -161,7 +174,7 @@ main {
             left: 25%;
         }
     }
-    //** nshima style
+    //********************** nshima style *********************
     #nshima {
         grid-row: 2/3;
         grid-column: 3/5;
@@ -180,7 +193,7 @@ main {
             height: auto;
         }
     }
-    //** pancakes styles 
+    //***************** pancakes styles  **********************
     #pancakes {
         grid-row: 3/4;
         grid-column: 3/4;
@@ -198,7 +211,7 @@ main {
             height: auto;
         }
     }
-    //** chicken style
+    //********************* chicken style ********************
     #chicken {
         grid-row: 3/4;
         grid-column: 4/5;
@@ -206,7 +219,7 @@ main {
         border-bottom-right-radius: 20px;
         position: relative;
         height: auto;
-        //** positioning chibutton
+        //************ positioning chibutton ***************
         #chibutton {
             position: absolute;
             top: 40%;
@@ -217,7 +230,7 @@ main {
             height: auto;
         }
     }
-    //** buttons looks
+    //******************* buttons looks **********************
     .button {
         height: auto;
         width: fit-content;
