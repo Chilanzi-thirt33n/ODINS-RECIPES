@@ -24,7 +24,7 @@ desktop start styling
 ![](images/design/2022-05-02_02-51.png)
 desktop styling progress
 ![](images/design/2022-05-05_13-09.png)
-landing desktop page stlying completely
+landing desktop page styling completely
 ![](images/design/2022-05-08_17-18.png)
 
 
@@ -49,7 +49,7 @@ landing desktop page stlying completely
 
 ### Continued development
 
-- plan on developimg the inner pages by june 
+- plan on developing the inner pages by june 
 
 ## Author
 
