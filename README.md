@@ -20,10 +20,12 @@ figma design 1
 ![](images/design/prototype.png)
 figma design 2
 ![](images/design/prototype002.png)
-progress 1
+desktop start styling
 ![](images/design/2022-05-02_02-51.png)
-progress 2022
+desktop styling progress
 ![](images/design/2022-05-05_13-09.png)
+landing desktop page stlying completely
+![](images/design/2022-05-08_17-18.png)
 
 
 ### Links

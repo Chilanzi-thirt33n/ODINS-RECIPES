@@ -114,18 +114,20 @@
                             order: -1;
                             height: 100vh;
                             background-color: $secondary-color;
-                            img {
-                                position: relative;
-                                z-index: 9;
-                                top: 5em;
-                            }
-                            p {
-                                position: relative;
-                                z-index: 8;
-                                left: 6em;
-                                top: 2em;
-                                font-family: $mobile-font;
-                                font-size: 1.5em;
+                            figure {
+                                display: flex;
+                                justify-content: flex-end;
+                                flex-direction: column;
+                                align-items: center;
+                                img {
+                                    margin-top: 5em;
+                                    flex-grow: auto;
+                                }
+                                p {
+                                    font-family: $mobile-font;
+                                    font-size: 1.5em;
+                                    flex: auto;
+                                }
                             }
                         }
                     }

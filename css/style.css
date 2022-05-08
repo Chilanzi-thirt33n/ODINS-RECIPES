@@ -84,18 +84,20 @@ body {
     height: 100vh;
     background-color: #c8d3d5;
   }
-  main #topPicks img {
-    position: relative;
-    z-index: 9;
-    top: 5em;
+  main #topPicks figure {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: center;
   }
-  main #topPicks p {
-    position: relative;
-    z-index: 8;
-    left: 6em;
-    top: 2em;
+  main #topPicks figure img {
+    margin-top: 5em;
+    flex-grow: auto;
+  }
+  main #topPicks figure p {
     font-family: "oswald", sans-serif;
     font-size: 1.5em;
+    flex: auto;
   }
 }
 @media screen and (min-width: 1080px) {
