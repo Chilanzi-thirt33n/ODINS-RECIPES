@@ -1,5 +1,4 @@
-Copyright (c) 2016, gluk ( www.glukfonts.pl | gluksza@wp.pl ),
-with Reserved Font Names BroshK, BroshK-Orange, BroshK-Plum and BroshK-Lime.
+Copyright 2016 The Oswald Project Authors (https://github.com/googlefonts/OswaldFont)
 
 This Font Software is licensed under the SIL Open Font License, Version 1.1.
 This license is copied below, and is also available with a FAQ at:
