@@ -56,6 +56,14 @@ body {
 }
 
 @media screen and (max-width: 480px) {
+  body {
+    background-image: url("../images/mobile-background2.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-clip: fixed;
+  }
+
   header {
     width: 100vw;
     position: fixed;
@@ -72,6 +80,26 @@ body {
     justify-content: space-between;
     align-items: center;
   }
+  header ul .nav-button {
+    font-size: 1.2em;
+    margin-right: 2em;
+  }
+  header ul .nav-button a:link,
+header ul .nav-button a:visited {
+    color: black;
+    border: 1px solid black;
+    padding: 0.2em 0.5em;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+  }
+  header ul .nav-button a:hover,
+header ul .nav-button a:focus,
+header ul .nav-button a:active {
+    background-color: #f4d35e;
+  }
 
   main {
     display: flex;
@@ -83,6 +111,10 @@ body {
     order: -1;
     height: 100vh;
     background-color: #c8d3d5;
+    background-image: url("../images/backcss.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
   }
   main #topPicks figure {
     display: flex;
@@ -98,6 +130,23 @@ body {
     font-family: "oswald", sans-serif;
     font-size: 1.5em;
     flex: auto;
+  }
+  main .button a:link,
+main .button a:visited {
+    color: #f4d35e;
+    border: 1px solid #f4d35e;
+    padding: 0.3em 1em;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+  }
+  main .button a:hover,
+main .button a:focus,
+main .button a:active {
+    color: black;
+    background-color: #c8d3d5;
   }
 }
 @media screen and (min-width: 1080px) {
