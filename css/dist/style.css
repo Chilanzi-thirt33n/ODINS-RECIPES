@@ -55,7 +55,7 @@ body {
   margin: 0;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 417px) {
   body {
     background-image: url("../images/mobile-background2.jpg");
     background-repeat: no-repeat;
