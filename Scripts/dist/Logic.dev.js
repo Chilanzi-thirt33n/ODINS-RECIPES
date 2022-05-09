@@ -1,5 +1,6 @@
 "use strict";
 
+//*footer copyright logic
 var myFooter = function myFooter() {
   var mytime = new Date();
   var year = mytime.getFullYear();
@@ -8,4 +9,4 @@ var myFooter = function myFooter() {
   return message;
 };
 
-document.getElementById('copyright').innerHTML = myFooter();
+document.getElementById('copyright').innerHTML = myFooter(); //*TODO randome click button
