@@ -55,24 +55,18 @@ body {
   margin: 0;
 }
 
-@media screen and (max-width: 417px) {
+@media screen and (max-width: 600px) {
   body {
-    background-image: url("../images/mobile-background2.jpg");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    background-clip: fixed;
+    background-color: #edf2f4;
   }
-
-  header {
+  body header {
     width: 100vw;
-    position: fixed;
+    position: absolute;
     margin: 0;
     top: 0;
     z-index: 10;
-    background-color: #c8d3d5;
   }
-  header ul {
+  body header ul {
     font-family: "oswald", sans-serif;
     list-style-type: none;
     display: flex;
@@ -80,76 +74,72 @@ body {
     justify-content: space-between;
     align-items: center;
   }
-  header ul .nav-button {
+  body header ul .nav-button {
     font-size: 1.2em;
     margin-right: 2em;
   }
-  header ul .nav-button a:link,
-header ul .nav-button a:visited {
-    color: black;
-    border: 1px solid black;
-    padding: 0.2em 0.5em;
-    border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
+  body header ul .nav-button a:link,
+body header ul .nav-button a:visited {
+    color: #f4d35e;
   }
-  header ul .nav-button a:hover,
-header ul .nav-button a:focus,
-header ul .nav-button a:active {
-    background-color: #f4d35e;
+  body header ul .nav-button a:hover,
+body header ul .nav-button a:focus,
+body header ul .nav-button a:active {
+    color: #c8d3d5;
+    text-decoration: underline;
   }
-
-  main {
+  body main {
+    background-color: #edf2f4;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
   }
-  main #topPicks {
+  body main #topPicks {
     order: -1;
     height: 100vh;
     background-color: #c8d3d5;
     background-image: url("../images/backcss.png");
+    position: relative;
+    z-index: 9;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
   }
-  main #topPicks figure {
+  body main #topPicks figure {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     flex-direction: column;
     align-items: center;
   }
-  main #topPicks figure img {
-    margin-top: 5em;
+  body main #topPicks figure img {
+    margin-top: 9em;
     flex-grow: auto;
   }
-  main #topPicks figure p {
+  body main #topPicks figure p {
     font-family: "oswald", sans-serif;
     font-size: 1.5em;
     flex: auto;
   }
-  main .button a:link,
-main .button a:visited {
+  body main .button a:link,
+body main .button a:visited {
     color: #f4d35e;
     border: 1px solid #f4d35e;
-    padding: 0.3em 1em;
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
+    padding: 0.1em 4em;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
   }
-  main .button a:hover,
-main .button a:focus,
-main .button a:active {
+  body main .button a:hover,
+body main .button a:focus,
+body main .button a:active {
     color: black;
-    background-color: #c8d3d5;
+    background-color: #f4d35e;
   }
 }
-@media screen and (min-width: 1080px) {
+@media screen and (min-width: 1600px) {
   header {
     height: auto;
     width: 100vw;
