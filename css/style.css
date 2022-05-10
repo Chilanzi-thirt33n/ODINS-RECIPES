@@ -21,11 +21,6 @@ body {
   box-sizing: border-box;
   display: block;
   background-color: #edf2f4;
-  background-image: url("../images/foodbackground2.jpg");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  background-attachment: fixed;
 }
 body p {
   font-size: 2em;
@@ -113,7 +108,7 @@ body header ul .nav-button a:active {
     align-items: center;
   }
   body main #topPicks figure img {
-    margin-top: 9em;
+    margin-top: 6em;
     flex-grow: auto;
   }
   body main #topPicks figure p {
@@ -125,7 +120,7 @@ body header ul .nav-button a:active {
 body main .button a:visited {
     color: #f4d35e;
     border: 1px solid #f4d35e;
-    padding: 0.1em 4em;
+    padding: 0.1em 5rem;
     border-radius: 20px;
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
@@ -140,11 +135,18 @@ body main .button a:active {
   }
 }
 @media screen and (min-width: 1600px) {
-  header {
+  body {
+    background-image: url("../images/foodbackground2.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  body header {
     height: auto;
     width: 100vw;
   }
-  header ul {
+  body header ul {
     display: flex;
     flex-direction: row;
     font-family: "maghrib", Helvetica, "sans-serif";
@@ -158,27 +160,26 @@ body main .button a:active {
     font-size: 2.5em;
     background-color: #c8d3d5;
   }
-  header ul #logo {
+  body header ul #logo {
     margin-top: 0;
     margin-bottom: 0;
     flex: initial;
   }
-  header ul li {
+  body header ul li {
     margin: 0.2em;
     flex: initial;
   }
-  header ul a:link {
+  body header ul a:link {
     color: black;
   }
-  header ul a:visited {
+  body header ul a:visited {
     color: black;
   }
-  header ul a:hover {
+  body header ul a:hover {
     color: #f4d35e;
     text-decoration: underline;
   }
-
-  main {
+  body main {
     grid-row: 2/3;
     grid-column: 1/4;
     display: grid;
@@ -190,18 +191,18 @@ body main .button a:active {
     justify-content: center;
     align-content: space-evenly;
   }
-  main #title {
+  body main #title {
     grid-row: 1/2;
     grid-column: 2/3;
   }
-  main #title h1 {
+  body main #title h1 {
     margin: 20px 0 0 0;
     font-family: "un-round", "oswald", "Gv time", Helvetica, Arial, Verdana, sans-serif;
   }
-  main #title p {
+  body main #title p {
     margin: 0;
   }
-  main #topPicks {
+  body main #topPicks {
     grid-row: 2/4;
     grid-column: 2/3;
     background-color: #c8d3d5;
@@ -215,13 +216,13 @@ body main .button a:active {
     height: auto;
     position: relative;
   }
-  main #topPicks #randomPick {
+  body main #topPicks #randomPick {
     position: absolute;
     top: 40%;
     bottom: 50%;
     left: 25%;
   }
-  main #nshima {
+  body main #nshima {
     grid-row: 2/3;
     grid-column: 3/5;
     background-color: #c8d3d5;
@@ -229,32 +230,32 @@ body main .button a:active {
     position: relative;
     height: auto;
   }
-  main #nshima #shibutton {
+  body main #nshima #shibutton {
     position: absolute;
     top: 40%;
     left: 30%;
   }
-  main #nshima figure {
+  body main #nshima figure {
     margin: 4em 0 0 0;
     height: auto;
   }
-  main #pancakes {
+  body main #pancakes {
     grid-row: 3/4;
     grid-column: 3/4;
     background-color: #c8d3d5;
     position: relative;
     height: auto;
   }
-  main #pancakes #panbutton {
+  body main #pancakes #panbutton {
     position: absolute;
     top: 40%;
     left: 4em;
   }
-  main #pancakes figure {
+  body main #pancakes figure {
     margin: 4em 0 0 0;
     height: auto;
   }
-  main #chicken {
+  body main #chicken {
     grid-row: 3/4;
     grid-column: 4/5;
     background-color: #c8d3d5;
@@ -262,16 +263,16 @@ body main .button a:active {
     position: relative;
     height: auto;
   }
-  main #chicken #chibutton {
+  body main #chicken #chibutton {
     position: absolute;
     top: 40%;
     left: 3em;
   }
-  main #chicken figure {
+  body main #chicken figure {
     margin: 4em 0 0 0;
     height: auto;
   }
-  main .button {
+  body main .button {
     height: auto;
     width: -webkit-fit-content;
     width: -moz-fit-content;
@@ -279,7 +280,7 @@ body main .button a:active {
     padding: 0 2em;
     text-align: center;
   }
-  main .button a:link {
+  body main .button a:link {
     padding: 0 2em;
     background-color: #f4d35e;
     border: solid black 1px;
@@ -290,10 +291,10 @@ body main .button a:active {
     -ms-transition: all 0.2s ease-in-out;
     -o-transition: all 0.2s ease-in-out;
   }
-  main .button a:visited {
+  body main .button a:visited {
     color: black;
   }
-  main .button a:hover {
+  body main .button a:hover {
     background-color: #edf2f4;
     box-shadow: 5px 6px black;
     border-radius: 10px;
@@ -307,11 +308,10 @@ body main .button a:active {
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
   }
-  main .button a:active {
+  body main .button a:active {
     background-color: rgb(253, 43, 43);
   }
-
-  footer #copyright {
+  body footer #copyright {
     text-align: center;
     font-size: 1.2em;
   }
