@@ -7,4 +7,23 @@ var myFooter = function() {
     return message;
 };
 document.getElementById('copyright').innerHTML = myFooter();
-//*TODO randome click button
+//* message for top-level
+var Welcome = function() {
+    var Today = new Date();
+    var hourNow = Today.getHours();
+    var greeting;
+
+    if (hourNow >= 18) {
+        greeting = "good evening welcome to food central";
+    } else if (hourNow >= 12) {
+        greeting = "afternoon welcome to food central";
+    } else if (hourNow >= 6) {
+        greeting = "Good morning,welcome to food central";
+    } else if (hourNow >= 00) {
+        greeting = "you should be asleep ";
+    } else {
+        greeting = "Welcome to food central";
+    }
+    return greeting;
+}
+document.getElementById("welcome-message").innerHTML = Welcome();
