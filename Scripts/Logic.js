@@ -12,14 +12,18 @@ var Welcome = function() {
     var Today = new Date();
     var hourNow = Today.getHours();
     var greeting;
+    const dinnerTime = 18;
+    const lunchTime = 12;
+    const breakFastTime = 6;
+    const midNight = 00;
 
-    if (hourNow >= 18) {
+    if (hourNow >= dinnerTime) {
         greeting = "good evening welcome to food central";
-    } else if (hourNow >= 12) {
+    } else if (hourNow >= lunchTime) {
         greeting = "afternoon welcome to food central";
-    } else if (hourNow >= 6) {
+    } else if (hourNow >= breakFastTime) {
         greeting = "Good morning,welcome to food central";
-    } else if (hourNow >= 00) {
+    } else if (hourNow >= midNight) {
         greeting = "you should be asleep ";
     } else {
         greeting = "Welcome to food central";
@@ -27,3 +31,27 @@ var Welcome = function() {
     return greeting;
 }
 document.getElementById("welcome-message").innerHTML = Welcome();
+//* function for changing link accoutin to time
+var randomLink = function() {
+    var Today = new Date();
+    var hourNow = Today.getHours();
+    var link;
+    const dinnerTime = 18;
+    const lunchTime = 12;
+    const breakFastTime = 6;
+    const midNight = 00;
+
+    if (hourNow >= dinnerTime) {
+        link = "Recipes/Nshima.html";
+    } else if (hourNow >= lunchTime) {
+        link = "Recipes/Chicken.html";
+    } else if (hourNow >= breakFastTime) {
+        link = "Recipes/Pancakes.html";
+    } else if (hourNow >= midNight) {
+        link = "Recipes/Pancakes.html";
+    } else {
+        link = "Recipes/Chicken.html";
+    }
+    return link;
+}
+document.getElementById("changeme").href = randomLink();
