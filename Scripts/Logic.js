@@ -1,4 +1,4 @@
-//*footer copyright logic
+//*footer copyright function
 var myFooter = function() {
     let mytime = new Date();
     let year = mytime.getFullYear();
@@ -7,7 +7,7 @@ var myFooter = function() {
     return message;
 };
 document.getElementById('copyright').innerHTML = myFooter();
-//* message for top-level
+//* message for top-level function
 var Welcome = function() {
     var Today = new Date();
     var hourNow = Today.getHours();
