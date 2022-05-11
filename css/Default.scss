@@ -1,0 +1,81 @@
+  /** ******************MY FOOD PAGE SCSS******************** **/
+  
+  //**********************CUSTOM FONTS*************************
+  @font-face {
+      font-family: "Gv time";
+      src: url(../fonts/gv-time-font/GvtimeRegular-AL6Jg.otf) format('opentype');
+  }
+  
+  @font-face {
+      font-family: "oswald";
+      src: url("../fonts/Oswald/Oswald-VariableFont_wght.ttf") format('truetype');
+  }
+  
+  @font-face {
+      font-family: "un-round";
+      src: url("../fonts/unround-font/Unround-owpGB.ttf") format('truetype');
+  }
+  
+  @font-face {
+      font-family: "maghrib";
+      src: url(../fonts/maghrib-font/Maghrib-MVZpx.ttf) format('truetype');
+  }
+  
+  //***************************VARIABLES***************************
+  $font-stack:"un-round",
+  "oswald",
+  "Gv time",
+  Helvetica,
+  Arial,
+  Verdana,
+  sans-serif;
+  $font-style:"maghrib",
+  Helvetica,
+  'sans-serif';
+  $mobile-font:"oswald",
+  sans-serif;
+  $secondary-color: #c8d3d5; //30
+  $primary-color: #f4d35e; //10
+  $primary-background-color: #edf2f4; //60
+  $hover-color:#8d99ae;
+  $heading-color: #ffb623;
+  $active-color: rgb(253,
+  43,
+  43);
+  //*****************************DEFAULTS**************************
+  body {
+      font-family: $font-style;
+      font-size: 100%;
+      text-transform: capitalize;
+      box-sizing: border-box;
+      display: block;
+      background-color: $primary-background-color;
+      //*body elements
+      p {
+          font-size: 2em;
+      }
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+          font-family: $font-stack;
+          color: $heading-color;
+      }
+      a {
+          text-decoration: none;
+      }
+      img {
+          max-width: 100%;
+      }
+  }
+  
+   ::after,
+   ::before {
+      box-sizing: inherit;
+  }
+  
+  body {
+      margin: 0;
+  }

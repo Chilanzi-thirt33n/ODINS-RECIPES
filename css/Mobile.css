@@ -1,0 +1,102 @@
+@font-face {
+  font-family: "Gv time";
+  src: url(../fonts/gv-time-font/GvtimeRegular-AL6Jg.otf) format("opentype");
+}
+@font-face {
+  font-family: "oswald";
+  src: url("../fonts/Oswald/Oswald-VariableFont_wght.ttf") format("truetype");
+}
+@font-face {
+  font-family: "un-round";
+  src: url("../fonts/unround-font/Unround-owpGB.ttf") format("truetype");
+}
+@font-face {
+  font-family: "maghrib";
+  src: url(../fonts/maghrib-font/Maghrib-MVZpx.ttf) format("truetype");
+}
+@media screen and (max-width: 600px) {
+  body {
+    background-color: #edf2f4;
+  }
+  body header {
+    width: 100vw;
+    position: absolute;
+    margin: 0;
+    top: 0;
+    z-index: 10;
+  }
+  body header ul {
+    font-family: "oswald", sans-serif;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  body header ul .nav-button {
+    font-size: 1.2em;
+    margin-right: 2em;
+  }
+  body header ul .nav-button a:link,
+body header ul .nav-button a:visited {
+    color: #f4d35e;
+  }
+  body header ul .nav-button a:hover,
+body header ul .nav-button a:focus,
+body header ul .nav-button a:active {
+    color: #c8d3d5;
+    text-decoration: underline;
+  }
+  body main {
+    background-color: #edf2f4;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  body main #topPicks {
+    order: -1;
+    height: 100vh;
+    background-color: #c8d3d5;
+    background-image: url("../images/backcss.png");
+    position: relative;
+    z-index: 9;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
+  body main #topPicks figure {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+  }
+  body main #topPicks figure img {
+    margin-top: 6em;
+    flex-grow: auto;
+  }
+  body main #topPicks figure p {
+    font-family: "oswald", sans-serif;
+    font-size: 1.5em;
+    flex: auto;
+  }
+  body main .button a:link,
+body main .button a:visited {
+    color: #f4d35e;
+    border: 1px solid #f4d35e;
+    padding: 0.1em 5rem;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+  }
+  body main .button a:hover,
+body main .button a:focus,
+body main .button a:active {
+    color: black;
+    background-color: #f4d35e;
+  }
+}
+
+/*# sourceMappingURL=Mobile.css.map */

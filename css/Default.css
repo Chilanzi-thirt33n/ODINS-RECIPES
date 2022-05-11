@@ -1,0 +1,54 @@
+/** ******************MY FOOD PAGE SCSS******************** **/
+@font-face {
+  font-family: "Gv time";
+  src: url(../fonts/gv-time-font/GvtimeRegular-AL6Jg.otf) format("opentype");
+}
+@font-face {
+  font-family: "oswald";
+  src: url("../fonts/Oswald/Oswald-VariableFont_wght.ttf") format("truetype");
+}
+@font-face {
+  font-family: "un-round";
+  src: url("../fonts/unround-font/Unround-owpGB.ttf") format("truetype");
+}
+@font-face {
+  font-family: "maghrib";
+  src: url(../fonts/maghrib-font/Maghrib-MVZpx.ttf) format("truetype");
+}
+body {
+  font-family: "maghrib", Helvetica, "sans-serif";
+  font-size: 100%;
+  text-transform: capitalize;
+  box-sizing: border-box;
+  display: block;
+  background-color: #edf2f4;
+}
+body p {
+  font-size: 2em;
+}
+body h1,
+body h2,
+body h3,
+body h4,
+body h5,
+body h6 {
+  font-family: "un-round", "oswald", "Gv time", Helvetica, Arial, Verdana, sans-serif;
+  color: #ffb623;
+}
+body a {
+  text-decoration: none;
+}
+body img {
+  max-width: 100%;
+}
+
+::after,
+::before {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+}
+
+/*# sourceMappingURL=Default.css.map */

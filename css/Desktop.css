@@ -1,0 +1,194 @@
+@font-face {
+  font-family: "Gv time";
+  src: url(../fonts/gv-time-font/GvtimeRegular-AL6Jg.otf) format("opentype");
+}
+@font-face {
+  font-family: "oswald";
+  src: url("../fonts/Oswald/Oswald-VariableFont_wght.ttf") format("truetype");
+}
+@font-face {
+  font-family: "un-round";
+  src: url("../fonts/unround-font/Unround-owpGB.ttf") format("truetype");
+}
+@font-face {
+  font-family: "maghrib";
+  src: url(../fonts/maghrib-font/Maghrib-MVZpx.ttf) format("truetype");
+}
+@media screen and (min-width: 1600px) {
+  body {
+    background-image: url("../images/foodbackground2.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  body header {
+    height: auto;
+    width: 100vw;
+  }
+  body header ul {
+    display: flex;
+    flex-direction: row;
+    font-family: "maghrib", Helvetica, "sans-serif";
+    flex-wrap: nowrap;
+    padding: 0.5em 3em;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5px;
+    list-style-type: none;
+    margin-top: 0;
+    font-size: 2.5em;
+    background-color: #c8d3d5;
+  }
+  body header ul #logo {
+    margin-top: 0;
+    margin-bottom: 0;
+    flex: initial;
+  }
+  body header ul li {
+    margin: 0.2em;
+    flex: initial;
+  }
+  body header ul a:link {
+    color: black;
+  }
+  body header ul a:visited {
+    color: black;
+  }
+  body header ul a:hover {
+    color: #f4d35e;
+    text-decoration: underline;
+  }
+  body main {
+    grid-row: 2/3;
+    grid-column: 1/4;
+    display: grid;
+    grid-template-rows: minmax(min-content, max-content) minmax(min-content, max-content) minmax(min-content, max-content);
+    grid-template-columns: 50px minmax(min-content, max-content) minmax(min-content, max-content) minmax(min-content, max-content) 50px;
+    grid-gap: 10px;
+    justify-content: center;
+    align-content: space-evenly;
+  }
+  body main #title {
+    grid-row: 1/2;
+    grid-column: 2/3;
+  }
+  body main #title h1 {
+    margin: 20px 0 0 0;
+    font-family: "un-round", "oswald", "Gv time", Helvetica, Arial, Verdana, sans-serif;
+  }
+  body main #title p {
+    margin: 0;
+  }
+  body main #topPicks {
+    grid-row: 2/4;
+    grid-column: 2/3;
+    background-color: #c8d3d5;
+    background-image: url("../images/backcss.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-clip: content-box;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    height: auto;
+    position: relative;
+  }
+  body main #topPicks #randomPick {
+    position: absolute;
+    top: 40%;
+    bottom: 50%;
+    left: 25%;
+  }
+  body main #nshima {
+    grid-row: 2/3;
+    grid-column: 3/5;
+    background-color: #c8d3d5;
+    border-top-right-radius: 20px;
+    position: relative;
+    height: auto;
+  }
+  body main #nshima #shibutton {
+    position: absolute;
+    top: 40%;
+    left: 30%;
+  }
+  body main #nshima figure {
+    margin: 4em 0 0 0;
+    height: auto;
+  }
+  body main #pancakes {
+    grid-row: 3/4;
+    grid-column: 3/4;
+    background-color: #c8d3d5;
+    position: relative;
+    height: auto;
+  }
+  body main #pancakes #panbutton {
+    position: absolute;
+    top: 40%;
+    left: 4em;
+  }
+  body main #pancakes figure {
+    margin: 4em 0 0 0;
+    height: auto;
+  }
+  body main #chicken {
+    grid-row: 3/4;
+    grid-column: 4/5;
+    background-color: #c8d3d5;
+    border-bottom-right-radius: 20px;
+    position: relative;
+    height: auto;
+  }
+  body main #chicken #chibutton {
+    position: absolute;
+    top: 40%;
+    left: 3em;
+  }
+  body main #chicken figure {
+    margin: 4em 0 0 0;
+    height: auto;
+  }
+  body main .button {
+    height: auto;
+    width: fit-content;
+    padding: 0 2em;
+    text-align: center;
+  }
+  body main .button a:link {
+    padding: 0 2em;
+    background-color: #f4d35e;
+    border: solid black 1px;
+    color: black;
+    transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+  }
+  body main .button a:visited {
+    color: black;
+  }
+  body main .button a:hover {
+    background-color: #edf2f4;
+    box-shadow: 5px 6px black;
+    border-radius: 10px;
+    text-align: center;
+    height: auto;
+    width: fit-content;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+  }
+  body main .button a:active {
+    background-color: #fd2b2b;
+  }
+  body footer #copyright {
+    text-align: center;
+    font-size: 1.2em;
+  }
+}
+
+/*# sourceMappingURL=Desktop.css.map */
