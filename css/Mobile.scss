@@ -89,6 +89,11 @@ $active-color: rgb(253,
             .nav-button a:visited {
                 color: $primary-color;
             }
+            .nav-button a:hover,
+            .nav-button a:focus {
+                color: $secondary-color;
+                text-decoration: underline;
+            }
         }
         main {
             display: flex;

@@ -62,6 +62,11 @@ body .button a:focus {
 body ul .nav-button a:visited {
     color: #f4d35e;
   }
+  body ul .nav-button a:hover,
+body ul .nav-button a:focus {
+    color: #c8d3d5;
+    text-decoration: underline;
+  }
   body main {
     display: flex;
     flex-direction: column;
