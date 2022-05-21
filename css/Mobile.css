@@ -50,20 +50,29 @@ body .button a:focus {
     border: 1px solid black;
     background-color: #fd2b2b;
   }
-  body ul {
+  body header {
+    width: 100vw;
+    position: fixed;
+    background-color: #edf2f4;
+    padding: 0.1rem;
+    z-index: 2;
+    font-size: 0.8rem;
+    box-shadow: 1px 1px 10px #5a5a5a;
+  }
+  body header ul {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 2rem;
     align-items: center;
-    gap: 2px;
     list-style-type: none;
   }
-  body ul .nav-button a:link,
-body ul .nav-button a:visited {
+  body header ul .nav-button a:link,
+body header ul .nav-button a:visited {
     color: #f4d35e;
   }
-  body ul .nav-button a:hover,
-body ul .nav-button a:focus {
+  body header ul .nav-button a:hover,
+body header ul .nav-button a:focus {
     color: #c8d3d5;
     text-decoration: underline;
   }
@@ -80,6 +89,7 @@ body ul .nav-button a:focus {
     height: 100vh;
   }
   body main #topPicks figure {
+    margin-top: 5rem;
     display: flex;
     flex-direction: column;
     flex-wrap: no-wrap;
@@ -105,6 +115,7 @@ body ul .nav-button a:focus {
     font-size: 2rem;
     position: relative;
     top: -1.4rem;
+    z-index: 1;
   }
   body main #pancakes {
     flex: auto;

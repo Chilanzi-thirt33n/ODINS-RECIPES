@@ -16,17 +16,39 @@
 this is a odin project on food recipes
 
 ### Screenshot
-figma design 1
+DESKTOP DESIGN
+
+first i designed a simple ui that i told myself i will improve upon i wanted it to be simple and beautiful at the same time nothing complicated
+
 ![](images/design/prototype.png)
-figma design 2
 ![](images/design/prototype002.png)
-desktop start styling
+
+DESKTOP IMPLEMENTATION
+
+i started styling my landing p[age and kept changing the color scheme ,was trying to have a color scheme that gives off food and cool]
+
 ![](images/design/2022-05-02_02-51.png)
-desktop styling progress
 ![](images/design/2022-05-05_13-09.png)
-landing desktop page styling completely
+
+DESKTOP FINAL DESIGN
+
+in this design i was happy with how it turned out.
+
 ![](images/design/2022-05-08_17-18.png)
 
+MOBILE FIGMA DESIGN
+
+Mobile figma design,i first design my ui with figma when i like the design i hard code the design
+
+![](images/design/iPhone%2013-13%20Pro%20-%201.png)
+![](images/design/2022-05-10_15-23.png)
+
+IMPLEMENTATION.
+
+this design didnt take time to implement i only need to improve on it.
+
+![](images/design/2022-05-21_15-51.png)
+![](images/design/2022-05-21_15-51_1.png)
 
 ### Links
 

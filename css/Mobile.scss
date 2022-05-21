@@ -78,21 +78,30 @@ $active-color: rgb(253,
             background-color: $active-color;
         }
         //************* NAV SECTION ****************
-        ul {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-evenly;
-            align-items: center;
-            gap: 2px;
-            list-style-type: none;
-            .nav-button a:link,
-            .nav-button a:visited {
-                color: $primary-color;
-            }
-            .nav-button a:hover,
-            .nav-button a:focus {
-                color: $secondary-color;
-                text-decoration: underline;
+        header {
+            width: 100vw;
+            position: fixed;
+            background-color: $primary-background-color;
+            padding: .1rem;
+            z-index: 2;
+            font-size: .8rem;
+            box-shadow: 1px 1px 10px#5a5a5a;
+            ul {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                gap: 2rem;
+                align-items: center;
+                list-style-type: none;
+                .nav-button a:link,
+                .nav-button a:visited {
+                    color: $primary-color;
+                }
+                .nav-button a:hover,
+                .nav-button a:focus {
+                    color: $secondary-color;
+                    text-decoration: underline;
+                }
             }
         }
         main {
@@ -107,6 +116,7 @@ $active-color: rgb(253,
                 flex: auto;
                 height: 100vh;
                 figure {
+                    margin-top: 5rem;
                     display: flex;
                     flex-direction: column;
                     flex-wrap: no-wrap;
@@ -133,6 +143,7 @@ $active-color: rgb(253,
                     font-size: 2rem;
                     position: relative;
                     top: -1.4rem;
+                    z-index: 1;
                 }
             }
             //**************** Pancakes ****************
