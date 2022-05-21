@@ -14,88 +14,252 @@
   font-family: "maghrib";
   src: url(../fonts/maghrib-font/Maghrib-MVZpx.ttf) format("truetype");
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 480px) {
   body {
-    background-color: #edf2f4;
-  }
-  body header {
-    width: 100vw;
-    position: absolute;
-    margin: 0;
-    top: 0;
-    z-index: 10;
-  }
-  body header ul {
-    font-family: "oswald", sans-serif;
-    list-style-type: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-  }
-  body header ul .nav-button {
-    font-size: 1.2em;
-    margin-right: 2em;
-  }
-  body header ul .nav-button a:link,
-body header ul .nav-button a:visited {
-    color: #f4d35e;
-  }
-  body header ul .nav-button a:hover,
-body header ul .nav-button a:focus,
-body header ul .nav-button a:active {
-    color: #c8d3d5;
-    text-decoration: underline;
-  }
-  body main {
-    background-color: #edf2f4;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-  }
-  body main #topPicks {
-    order: -1;
-    height: 100vh;
-    background-color: #c8d3d5;
     background-image: url("../images/backcss.png");
-    position: relative;
-    z-index: 9;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-  }
-  body main #topPicks figure {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    align-items: center;
-  }
-  body main #topPicks figure img {
-    margin-top: 6em;
-    flex-grow: auto;
-  }
-  body main #topPicks figure p {
+    background-attachment: fixed;
+    margin: 0;
     font-family: "oswald", sans-serif;
-    font-size: 1.5em;
-    flex: auto;
+    font-size: 1.2rem;
   }
-  body main .button a:link,
-body main .button a:visited {
+  body .button {
+    font-family: "maghrib", Helvetica, "sans-serif";
+  }
+  body .button a:link,
+body .button a:visited {
     color: #f4d35e;
+    padding: 0 4rem;
     border: 1px solid #f4d35e;
-    padding: 0.1em 5rem;
     border-radius: 20px;
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
     -ms-border-radius: 20px;
     -o-border-radius: 20px;
   }
-  body main .button a:hover,
-body main .button a:focus,
-body main .button a:active {
-    color: black;
+  body .button a:hover,
+body .button a:focus {
+    color: #c8d3d5;
+    border: 1px solid #c8d3d5;
     background-color: #f4d35e;
+  }
+  body .button a:active {
+    color: black;
+    border: 1px solid black;
+    background-color: #fd2b2b;
+  }
+  body ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 2px;
+    list-style-type: none;
+  }
+  body ul .nav-button a:link,
+body ul .nav-button a:visited {
+    color: #f4d35e;
+  }
+  body main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  body main #topPicks {
+    order: -1;
+    flex: auto;
+    height: 100vh;
+  }
+  body main #topPicks figure {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: no-wrap;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  body main #topPicks figure #changeme {
+    font-size: 2.2rem;
+  }
+  body main #title {
+    flex: auto;
+    background-color: #edf2f4;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+  body main #title h1 {
+    text-align: center;
+    margin-top: 3rem;
+  }
+  body main #title p {
+    color: black;
+    text-align: center;
+    font-size: 2rem;
+    position: relative;
+    top: -1.4rem;
+  }
+  body main #pancakes {
+    flex: auto;
+    background-color: #edf2f4;
+  }
+  body main #pancakes figure {
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+    background-color: #c8d3d5;
+    margin: 0 1rem 2em 1rem;
+    border-radius: 10px;
+    padding: 0.6rem;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+  }
+  body main #pancakes figure img {
+    flex: auto;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+  }
+  body main #pancakes figure .button a:link,
+body main #pancakes figure .button a:visited {
+    color: black;
+    padding: 0 6rem;
+    border: 1px solid #c8d3d5;
+    border-radius: 20px;
+    background-color: #ffb623;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+  }
+  body main #pancakes figure .button a:focus {
+    color: black;
+    border: 1px solid #c8d3d5;
+  }
+  body main #pancakes figure .button a:active {
+    color: #c8d3d5;
+    border: 1px solid #c8d3d5;
+    background-color: #fd2b2b;
+  }
+  body main #nshima {
+    flex: auto;
+    order: 2;
+    background-color: #edf2f4;
+  }
+  body main #nshima figure {
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+    background-color: #c8d3d5;
+    margin: 0 1rem 2em 1rem;
+    border-radius: 10px;
+    padding: 0.6rem;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+  }
+  body main #nshima figure img {
+    height: 210px;
+    flex: auto;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+  }
+  body main #nshima figure .button a:link,
+body main #nshima figure .button a:visited {
+    color: black;
+    padding: 0 2rem;
+    border: 1px solid #c8d3d5;
+    border-radius: 20px;
+    background-color: #ffb623;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+  }
+  body main #nshima figure .button a:focus {
+    color: black;
+    border: 1px solid #c8d3d5;
+  }
+  body main #nshima figure .button a:active {
+    color: #c8d3d5;
+    border: 1px solid #c8d3d5;
+    background-color: #fd2b2b;
+  }
+  body main #chicken {
+    flex: auto;
+    background-color: #edf2f4;
+  }
+  body main #chicken figure {
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+    background-color: #c8d3d5;
+    margin: 0 1rem 2em 1rem;
+    border-radius: 10px;
+    padding: 0.6rem;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+  }
+  body main #chicken figure img {
+    flex: auto;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+  }
+  body main #chicken figure .button a:link,
+body main #chicken figure .button a:visited {
+    color: black;
+    padding: 0 4rem;
+    border: 1px solid #c8d3d5;
+    border-radius: 20px;
+    background-color: #ffb623;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+  }
+  body main #chicken figure .button a:focus {
+    color: black;
+    border: 1px solid #c8d3d5;
+  }
+  body main #chicken figure .button a:active {
+    color: #c8d3d5;
+    border: 1px solid #c8d3d5;
+    background-color: #fd2b2b;
+  }
+  body footer {
+    background-color: #edf2f4;
+    margin-bottom: 0;
+  }
+  body footer p {
+    font-size: 1.1rem;
+    margin: 0 0.2rem;
+    padding: 0.6rem 0;
+    text-align: center;
+    color: black;
   }
 }
 

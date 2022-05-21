@@ -1,131 +1,298 @@
- //**********************CUSTOM FONTS*************************
- @font-face {
-     font-family: "Gv time";
-     src: url(../fonts/gv-time-font/GvtimeRegular-AL6Jg.otf) format('opentype');
- }
- 
- @font-face {
-     font-family: "oswald";
-     src: url("../fonts/Oswald/Oswald-VariableFont_wght.ttf") format('truetype');
- }
- 
- @font-face {
-     font-family: "un-round";
-     src: url("../fonts/unround-font/Unround-owpGB.ttf") format('truetype');
- }
- 
- @font-face {
-     font-family: "maghrib";
-     src: url(../fonts/maghrib-font/Maghrib-MVZpx.ttf) format('truetype');
- }
- 
- //***************************VARIABLES***************************
- $font-stack:"un-round",
- "oswald",
- "Gv time",
- Helvetica,
- Arial,
- Verdana,
- sans-serif;
- $font-style:"maghrib",
- Helvetica,
- 'sans-serif';
- $mobile-font:"oswald",
- sans-serif;
- $secondary-color: #c8d3d5; //30
- $primary-color: #f4d35e; //10
- $primary-background-color: #edf2f4; //60
- $hover-color:#8d99ae;
- $heading-color: #ffb623;
- $active-color: rgb(253,
- 43,
- 43);
- //***************************** MOBILE STYLE *****************************
- @media screen and (max-width:600px) {
-     body {
-         background-color: $primary-background-color;
-         //**++++++++++ navigation ++++++++++++
-         header {
-             width: 100vw;
-             position: absolute;
-             margin: 0;
-             top: 0;
-             z-index: 10;
-             ul {
-                 font-family: $mobile-font;
-                 list-style-type: none;
-                 display: flex;
-                 flex-direction: row;
-                 justify-content: space-between;
-                 align-items: center;
-                 .nav-button {
-                     font-size: 1.2em;
-                     margin-right: 2em;
-                     a:link,
-                     a:visited {
-                         color: $primary-color;
-                     }
-                     a:hover,
-                     a:focus,
-                     a:active {
-                         color: $secondary-color;
-                         text-decoration: underline;
-                     }
-                 }
-             }
-         }
-         //**+++++++++ main +++++++++++++++++
-         main {
-             background-color: $primary-background-color;
-             display: flex;
-             flex-direction: column;
-             justify-content: space-evenly;
-             align-items: center;
-             //**+++++++++top picks++++++++
-             #topPicks {
-                 order: -1;
-                 height: 100vh;
-                 background-color: $secondary-color;
-                 background-image: url("../images/backcss.png");
-                 position: relative;
-                 z-index: 9;
-                 background-repeat: no-repeat;
-                 background-position: center center;
-                 background-size: cover;
-                 figure {
-                     display: flex;
-                     justify-content: space-between;
-                     flex-direction: column;
-                     align-items: center;
-                     img {
-                         margin-top: 6em;
-                         flex-grow: auto;
-                     }
-                     p {
-                         font-family: $mobile-font;
-                         font-size: 1.5em;
-                         flex: auto;
-                     }
-                 }
-             }
-             .button a:link,
-             .button a:visited {
-                 color: $primary-color;
-                 border: 1px solid $primary-color;
-                 padding: .1em 5rem;
-                 border-radius: 20px;
-                 -webkit-border-radius: 20px;
-                 -moz-border-radius: 20px;
-                 -ms-border-radius: 20px;
-                 -o-border-radius: 20px;
-             }
-             .button a:hover,
-             .button a:focus,
-             .button a:active {
-                 color: black;
-                 background-color: $primary-color;
-                 ;
-             }
-         }
-     }
- }
+//**********************CUSTOM FONTS*************************
+@font-face {
+    font-family: "Gv time";
+    src: url(../fonts/gv-time-font/GvtimeRegular-AL6Jg.otf) format('opentype');
+}
+
+@font-face {
+    font-family: "oswald";
+    src: url("../fonts/Oswald/Oswald-VariableFont_wght.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: "un-round";
+    src: url("../fonts/unround-font/Unround-owpGB.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: "maghrib";
+    src: url(../fonts/maghrib-font/Maghrib-MVZpx.ttf) format('truetype');
+}
+
+//***************************VARIABLES***************************
+$font-stack:"un-round",
+"oswald",
+"Gv time",
+Helvetica,
+Arial,
+Verdana,
+sans-serif;
+$font-style:"maghrib",
+Helvetica,
+'sans-serif';
+$mobile-font:"oswald",
+sans-serif;
+$secondary-color: #c8d3d5; //30
+$primary-color: #f4d35e; //10
+$primary-background-color: #edf2f4; //60
+$hover-color:#8d99ae;
+$heading-color: #ffb623;
+$active-color: rgb(253,
+43,
+43);
+//***************************** MOBILE STYLE *****************************
+@media screen and (max-width:480px) {
+    body {
+        background-image: url("../images/backcss.png");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        background-attachment: fixed;
+        margin: 0;
+        font-family: $mobile-font;
+        font-size: 1.2rem;
+        //************ buttons **************
+        .button {
+            font-family: $font-style;
+        }
+        .button a:link,
+        .button a:visited {
+            color: $primary-color;
+            padding: 0 4rem;
+            border: 1px solid $primary-color;
+            border-radius: 20px;
+            -webkit-border-radius: 20px;
+            -moz-border-radius: 20px;
+            -ms-border-radius: 20px;
+            -o-border-radius: 20px;
+        }
+        .button a:hover,
+        .button a:focus {
+            color: $secondary-color;
+            border: 1px solid $secondary-color;
+            background-color: $primary-color;
+        }
+        .button a:active {
+            color: black;
+            border: 1px solid black;
+            background-color: $active-color;
+        }
+        //************* NAV SECTION ****************
+        ul {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+            gap: 2px;
+            list-style-type: none;
+            .nav-button a:link,
+            .nav-button a:visited {
+                color: $primary-color;
+            }
+        }
+        main {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            justify-content: space-evenly;
+            align-items: center;
+            //***************** toppicks *****************
+            #topPicks {
+                order: -1;
+                flex: auto;
+                height: 100vh;
+                figure {
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: no-wrap;
+                    justify-content: space-evenly;
+                    align-items: center;
+                    #changeme {
+                        font-size: 2.2rem;
+                    }
+                }
+            }
+            //**************** Title ****************************
+            #title {
+                flex: auto;
+                background-color: $primary-background-color;
+                border-top-left-radius: 20px;
+                border-top-right-radius: 20px;
+                h1 {
+                    text-align: center;
+                    margin-top: 3rem;
+                }
+                p {
+                    color: black;
+                    text-align: center;
+                    font-size: 2rem;
+                    position: relative;
+                    top: -1.4rem;
+                }
+            }
+            //**************** Pancakes ****************
+            #pancakes {
+                flex: auto;
+                background-color: $primary-background-color;
+                figure {
+                    display: flex;
+                    flex-direction: column-reverse;
+                    flex-wrap: nowrap;
+                    justify-content: space-between;
+                    align-items: center;
+                    gap: 3rem;
+                    background-color: $secondary-color;
+                    margin: 0 1rem 2em 1rem;
+                    border-radius: 10px;
+                    padding: .6rem;
+                    -webkit-border-radius: 10px;
+                    -moz-border-radius: 10px;
+                    -ms-border-radius: 10px;
+                    -o-border-radius: 10px;
+                    img {
+                        flex: auto;
+                        border-radius: 10px;
+                        -webkit-border-radius: 10px;
+                        -moz-border-radius: 10px;
+                        -ms-border-radius: 10px;
+                        -o-border-radius: 10px;
+                    }
+                    .button a:link,
+                    .button a:visited {
+                        color: black;
+                        padding: 0 6rem;
+                        border: 1px solid $secondary-color;
+                        border-radius: 20px;
+                        background-color: $heading-color;
+                        -webkit-border-radius: 20px;
+                        -moz-border-radius: 20px;
+                        -ms-border-radius: 20px;
+                        -o-border-radius: 20px;
+                    }
+                    .button a:focus {
+                        color: black;
+                        border: 1px solid $secondary-color;
+                    }
+                    .button a:active {
+                        color: $secondary-color;
+                        border: 1px solid $secondary-color;
+                        background-color: $active-color;
+                    }
+                }
+            }
+            //******************** nshima ****************************
+            #nshima {
+                flex: auto;
+                order: 2;
+                background-color: $primary-background-color;
+                figure {
+                    display: flex;
+                    flex-direction: column-reverse;
+                    flex-wrap: nowrap;
+                    justify-content: space-between;
+                    align-items: center;
+                    gap: 3rem;
+                    background-color: $secondary-color;
+                    margin: 0 1rem 2em 1rem;
+                    border-radius: 10px;
+                    padding: .6rem;
+                    -webkit-border-radius: 10px;
+                    -moz-border-radius: 10px;
+                    -ms-border-radius: 10px;
+                    -o-border-radius: 10px;
+                    img {
+                        height: 210px;
+                        flex: auto;
+                        border-radius: 10px;
+                        -webkit-border-radius: 10px;
+                        -moz-border-radius: 10px;
+                        -ms-border-radius: 10px;
+                        -o-border-radius: 10px;
+                    }
+                    .button a:link,
+                    .button a:visited {
+                        color: black;
+                        padding: 0 2rem;
+                        border: 1px solid $secondary-color;
+                        border-radius: 20px;
+                        background-color: $heading-color;
+                        -webkit-border-radius: 20px;
+                        -moz-border-radius: 20px;
+                        -ms-border-radius: 20px;
+                        -o-border-radius: 20px;
+                    }
+                    .button a:focus {
+                        color: black;
+                        border: 1px solid $secondary-color;
+                    }
+                    .button a:active {
+                        color: $secondary-color;
+                        border: 1px solid $secondary-color;
+                        background-color: $active-color;
+                    }
+                }
+            }
+            //******************** chicken ************************
+            #chicken {
+                flex: auto;
+                background-color: $primary-background-color;
+                figure {
+                    display: flex;
+                    flex-direction: column-reverse;
+                    flex-wrap: nowrap;
+                    justify-content: space-between;
+                    align-items: center;
+                    gap: 3rem;
+                    background-color: $secondary-color;
+                    margin: 0 1rem 2em 1rem;
+                    border-radius: 10px;
+                    padding: .6rem;
+                    -webkit-border-radius: 10px;
+                    -moz-border-radius: 10px;
+                    -ms-border-radius: 10px;
+                    -o-border-radius: 10px;
+                    img {
+                        flex: auto;
+                        border-radius: 10px;
+                        -webkit-border-radius: 10px;
+                        -moz-border-radius: 10px;
+                        -ms-border-radius: 10px;
+                        -o-border-radius: 10px;
+                    }
+                    .button a:link,
+                    .button a:visited {
+                        color: black;
+                        padding: 0 4rem;
+                        border: 1px solid $secondary-color;
+                        border-radius: 20px;
+                        background-color: $heading-color;
+                        -webkit-border-radius: 20px;
+                        -moz-border-radius: 20px;
+                        -ms-border-radius: 20px;
+                        -o-border-radius: 20px;
+                    }
+                    .button a:focus {
+                        color: black;
+                        border: 1px solid $secondary-color;
+                    }
+                    .button a:active {
+                        color: $secondary-color;
+                        border: 1px solid $secondary-color;
+                        background-color: $active-color;
+                    }
+                }
+            }
+        }
+        footer {
+            background-color: $primary-background-color;
+            margin-bottom: 0;
+            p {
+                font-size: 1.1rem;
+                margin: 0 .2rem;
+                padding: .6rem 0;
+                text-align: center;
+                color: black;
+            }
+        }
+    }
+}

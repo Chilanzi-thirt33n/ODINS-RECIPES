@@ -1,14 +1,14 @@
 //*footer copyright function
-var myFooter = function() {
+let myFooter = function() {
     let mytime = new Date();
     let year = mytime.getFullYear();
     let message = '<p id="copyright"> copyright &copy; arbit-tech  ' + year + ' Chilaaanzi';
-    message += ' last modified : ' + document.lastModified + 'window width ' + window.screen.width + '</p>';
+    message += ' last modified : ' + document.lastModified + ' window width ' + window.screen.width + '</p>';
     return message;
 };
 document.getElementById('copyright').innerHTML = myFooter();
 //* message for top-level function
-var Welcome = function() {
+let Welcome = function() {
     var Today = new Date();
     var hourNow = Today.getHours();
     var greeting;
@@ -32,7 +32,7 @@ var Welcome = function() {
 }
 document.getElementById("welcome-message").innerHTML = Welcome();
 //* function for changing link accoutin to time
-var randomLink = function() {
+let randomLink = function() {
     var Today = new Date();
     var hourNow = Today.getHours();
     var link;
